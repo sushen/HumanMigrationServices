@@ -74,6 +74,10 @@ def webhook():
                         response = " আপনি কোন দেশে যাবেন ? "
                         bot.send_text_message(sender_id, response)
 
+                    elif entity == 'location':
+                        response = " অাপনি কি এখানে যাওয়ার যোগ্যতা যাচাই করতে চান । "
+                        bot.send_text_message(sender_id, response)
+
                     elif entity == 'thanks':
                         response = " ভাল থাকবেন ।"
                         bot.send_text_message(sender_id, response)
