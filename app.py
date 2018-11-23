@@ -59,7 +59,7 @@ def webhook():
                         bot.send_text_message(sender_id, response)
 
                     elif entity == 'services':
-                        response = " আমাদের অনেক রকমের সেবা আছে । "
+                        response = " আমাদের অনেক রকমের সেবা আছে, তবে ফাইল চেক করাতে টাকা লাগে না । "
                         bot.send_text_message(sender_id, response)
 
                     elif entity == 'assist':
