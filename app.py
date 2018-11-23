@@ -83,7 +83,7 @@ def webhook():
                         bot.send_text_message(sender_id, response)
 
                     if response == None:
-                        response = "আমি যাতে যোগ্যতা যাচাই করতে পারি ,তাই আপনার তথ্য দিন । নিচের লিংকে একটা ফর্ম আছে সেটি পুরন করুন । http://form.com "
+                        response = "আমি যাতে যোগ্যতা যাচাই করতে পারি ,তাই আপনার তথ্য দিন । নিচের লিংকে একটা ফর্ম আছে সেটি পুরন করুন । https://sites.google.com/view/human-migration-services/ "
                         bot.send_text_message(sender_id, response)
 
     return "ok", 200
