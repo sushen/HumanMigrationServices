@@ -83,7 +83,7 @@ def webhook():
                         bot.send_text_message(sender_id, response)
 
                     if response == None:
-                        response = "We are testing"
+                        response = "আমি যাতে যোগ্যতা যাচাই করতে পারি , তাই আপনার তথ্য দিন । "
                         bot.send_text_message(sender_id, response)
 
     return "ok", 200
