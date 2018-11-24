@@ -78,6 +78,10 @@ def webhook():
                         response = " অাপনি কি এখানে যাওয়ার যোগ্যতা যাচাই করতে চান । "
                         bot.send_text_message(sender_id, response)
 
+                    elif entity == 'yes':
+                        response = "িচের লিংকে একটা ফর্ম আছে সেটি পুরন করুন । https://sites.google.com/view/human-migration-services/ "
+                        bot.send_text_message(sender_id, response)
+
                     elif entity == 'thanks':
                         response = " ভাল থাকবেন ।"
                         bot.send_text_message(sender_id, response)
