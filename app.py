@@ -75,11 +75,11 @@ def webhook():
                         bot.send_text_message(sender_id, response)
 
                     elif entity == 'location':
-                        response = " অাপনি কি এখানে যাওয়ার যোগ্যতা যাচাই করতে চান । "
+                        response = " অাপনি কি এখানে যাওয়ার যোগ্যতা যাচাই করতে চান ।ha  "
                         bot.send_text_message(sender_id, response)
 
                     elif entity == 'yes':
-                        response = "িচের লিংকে একটা ফর্ম আছে সেটি পুরন করুন । https://sites.google.com/view/human-migration-services/ "
+                        response = "নিজের লিংকে একটা ফর্ম আছে সেটি পুরন করুন । https://sites.google.com/view/human-migration-services/ "
                         bot.send_text_message(sender_id, response)
 
                     elif entity == 'thanks':
