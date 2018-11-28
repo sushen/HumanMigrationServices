@@ -1,5 +1,5 @@
 import sys
-from flask import Flask, request
+from flask import Flask, request, render_template
 from utils import wit_response
 from pymessenger import Bot, Element, Button
 
@@ -23,7 +23,7 @@ def verify():
         if not request.args.get("hub.verify_token") == "hello":
             return "Verification token mismatch", 403
         return request.args["hub.challenge"], 200
-    return "Hello World", 200
+    return render_template("index.html")
 
 
 @app.route('/', methods=['POST'])
@@ -97,6 +97,10 @@ def log(message):
     # previously it was print now I just Use Petty Print
     pprint(message)
     sys.stdout.flush()
+
+@app.route('/Privacy-Policy')
+def privacy_policy():
+    return render_template("Privacy-Policy.html")
 
 
 if __name__ == "__main__":
