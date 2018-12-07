@@ -90,6 +90,10 @@ def webhook():
                         response = " 121/C, Gulshan Avenue, Dhaka-1212"
                         bot.send_text_message(sender_id, response)
 
+                    elif entity == 'QuaterLaborer':
+                        response = " আপনার ফোন নাম্বার দিন আপনার সাথে যোগাযোগ করছি ।"
+                        bot.send_text_message(sender_id, response)
+
                     elif entity == 'thanks':
                         response = " ভাল থাকবেন ।"
                         bot.send_text_message(sender_id, response)
