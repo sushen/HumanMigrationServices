@@ -82,12 +82,20 @@ def webhook():
                         response = "নিজের লিংকে একটা ফর্ম আছে সেটি পুরন করুন । https://sites.google.com/view/human-migration-services/ "
                         bot.send_text_message(sender_id, response)
 
+                    elif entity == 'Address':
+                        response = " আপনি ঢাকা না চিটাগাং আফিসে আসতে চান ।"
+                        bot.send_text_message(sender_id, response)
+
+                    elif entity == 'Dhaka_office_address':
+                        response = " 121/C, Gulshan Avenue, Dhaka-1212"
+                        bot.send_text_message(sender_id, response)
+
                     elif entity == 'thanks':
                         response = " ভাল থাকবেন ।"
                         bot.send_text_message(sender_id, response)
 
                     if response == None:
-                        response = "আমি যাতে যোগ্যতা যাচাই করতে পারি ,তাই আপনার তথ্য দিন । নিচের লিংকে একটা ফর্ম আছে সেটি পুরন করুন । https://sites.google.com/view/human-migration-services/ "
+                        response = " "
                         bot.send_text_message(sender_id, response)
 
     return "ok", 200
